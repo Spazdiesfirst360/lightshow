@@ -7,7 +7,7 @@ A specific color cycle must subclass this template, and implement at least the
 'update' method.
 """
 class ColorCycleTemplate:
-    def __init__(self, numLEDs, pauseValue = 0, numStepsPerCycle = 100, numCycles = -1, globalBrightness = 4, order = 'rbg'): # Init method
+    def __init__(self, numLEDs=144, pauseValue = 0, numStepsPerCycle = 100, numCycles = -1, globalBrightness = 4, order = 'rgb'): # Init method
         self.numLEDs = numLEDs # The number of LEDs in the strip
         self.pauseValue = pauseValue # How long to pause between two runs
         self.numStepsPerCycle = numStepsPerCycle # The number of steps in one cycle.

@@ -1,6 +1,6 @@
 import colorschemes
 
-numLEDs = 430
+numLEDs = 144
 
 # One Cycle with one step and a pause of one second. Hence one second of white light
 print('One Second of white light')
