@@ -38,7 +38,7 @@ class APA102:
         self.leds = [self.ledstart,0,0,0] * self.numLEDs # Pixel buffer
         self.spi = spidev.SpiDev()  
         self.spi.open(0, 1)  # Open SPI port 0, slave device (CS)  1
-	# max speed 8000000 causes leds to misbehave
+        # max speed 8000000 causes leds to misbehave
         self.spi.max_speed_hz=800000 
 
     def clockStartFrame(self):
